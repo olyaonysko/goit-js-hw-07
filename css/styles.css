@@ -1,0 +1,32 @@
+h3 {
+  font-size: 24px;
+  color: teal;
+  text-decoration: underline;
+}
+
+#gallery {
+  display: flex;
+  list-style: none;
+}
+
+#gallery li {
+  width: 50%;
+  margin-right: 20px;
+}
+
+#gallery img {
+  width: 100%;
+  height: auto;
+}
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
