@@ -16,11 +16,9 @@ const images = [
   },
 ];
 
-images.forEach(image =>
-  document
-    .querySelector('#gallery')
-    .insertAdjacentHTML(
-      'beforeEnd',
-      `<li><img src="${image.url}" alt="${image.alt}"></li>`,
-    ),
+let layout = ``;
+
+images.forEach(
+  image => (layout += `<li><img src="${image.url}" alt="${image.alt}" /></li>`),
 );
+document.querySelector('#gallery').insertAdjacentHTML('beforeend', layout);
